@@ -1,1 +1,94 @@
 
+/* Container for the whole product list */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+/* Individual product card */
+.item-list {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 220px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.item-list:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Product image */
+.item-list img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+/* Product title */
+.item-list h3 {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Product price */
+.item-list p {
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 0;
+}
+
+/* Optional: NavLink styling if used for clickable products */
+.item-list a {
+  text-decoration: none;
+  color: inherit;
+}
+nav{
+  height: 100px;
+  font-size: xx-large;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+
+}
+.product-details {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.product-details button{
+  padding: 5px;
+  cursor: pointer;
+  background-color: aqua;
+  border-radius: 2px;
+  font-weight: bold;
+  color: black;
+}
+button{
+  padding: 10px;
+  margin-right: 10px;
+}
+#addProduct{
+  margin:  10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(248, 242, 242);
+  color: black;
+  cursor: pointer;
+}
